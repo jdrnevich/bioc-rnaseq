@@ -9,6 +9,7 @@
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
 carpentry: 'incubator'
+varnish: mblue9/varnish
 
 # Overall title for pages.
 title: 'RNA-seq analysis with Bioconductor'
@@ -21,7 +22,7 @@ keywords: 'software, data, lesson, The Carpentries'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha'
+life_cycle: 'beta'
 
 # License of the lesson
 license: 'CC-BY 4.0'
@@ -59,14 +60,14 @@ contact: 'charlotte.soneson@fmi.ch'
 
 # Order of episodes in your lesson
 episodes: 
-- 01-introduction.Rmd
-- 02-intro-to-rnaseq.Rmd
-- 03-setup.Rmd
-- 04-experimental-design.Rmd
-- 05-import-annotate.Rmd
-- 06-exploratory-qc.Rmd
-- 07-differential-expression.Rmd
-- 08-gene-set-analysis.Rmd
+- 01-intro-to-rnaseq.Rmd
+- 02-setup.Rmd
+- 03-import-annotate.Rmd
+- 04-exploratory-qc.Rmd
+- 05-differential-expression.Rmd
+- 06-extra-design.Rmd
+- 07-gene-set-analysis.Rmd
+- 08-next-steps.Rmd
 
 # Information for Learners
 learners: 
@@ -82,5 +83,4 @@ profiles:
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
 
-
-url: 'https://carpentries-incubator.github.io/bioc-rnaseq'
+url: https://carpentries-incubator.github.io/bioc-rnaseq
