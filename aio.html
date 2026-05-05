@@ -825,7 +825,7 @@ directory, create the four fundamental directories previously discussed
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <figure style="text-align: center"><img src="fig/02_setup/folders_working_dir.png" alt="Your working directory should look like this" width="1221" class="figure mx-auto d-block"><figcaption>
 Your working directory should look like this
@@ -940,20 +940,20 @@ remainder of this lesson.</p>
 <col width="77%">
 <col width="22%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>URL</th>
 <th>Filename</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><a href="https://github.com/carpentries-incubator/bioc-rnaseq/raw/main/episodes/data/GSE96870_coldata_cerebellum.csv" class="external-link uri">https://github.com/carpentries-incubator/bioc-rnaseq/raw/main/episodes/data/GSE96870_coldata_cerebellum.csv</a></td>
 <td>GSE96870_coldata_cerebellum.csv</td>
 </tr>
-<tr class="even">
+<tr>
 <td><a href="https://github.com/carpentries-incubator/bioc-rnaseq/raw/main/episodes/data/GSE96870_coldata_all.csv" class="external-link uri">https://github.com/carpentries-incubator/bioc-rnaseq/raw/main/episodes/data/GSE96870_coldata_all.csv</a></td>
 <td>GSE96870_coldata_all.csv</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><a href="https://github.com/carpentries-incubator/bioc-rnaseq/raw/main/episodes/data/GSE96870_rowranges.tsv" class="external-link uri">https://github.com/carpentries-incubator/bioc-rnaseq/raw/main/episodes/data/GSE96870_rowranges.tsv</a></td>
 <td>GSE96870_rowranges.tsv</td>
 </tr>
@@ -969,7 +969,7 @@ into the <code>data</code> folder in your working directory.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5307,26 +5307,26 @@ size of the <em>XY gene set</em> (i.e. the number of member genes),
 <span class="math inline">\(n\)</span> is the number of total genes.</p>
 <center>
 <table class="table">
-<thead><tr class="header">
+<thead><tr>
 <th></th>
 <th>In the gene set</th>
 <th>Not in the gene set</th>
 <th>Total</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><strong>DE</strong></td>
 <td><span class="math inline">\(n_{11}\)</span></td>
 <td><span class="math inline">\(n_{12}\)</span></td>
 <td><span class="math inline">\(n_{1+}\)</span></td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>Not DE</strong></td>
 <td><span class="math inline">\(n_{21}\)</span></td>
 <td><span class="math inline">\(n_{22}\)</span></td>
 <td><span class="math inline">\(n_{2+}\)</span></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><strong>Total</strong></td>
 <td><span class="math inline">\(n_{+1}\)</span></td>
 <td><span class="math inline">\(n_{+2}\)</span></td>
@@ -5376,26 +5376,26 @@ size of the <em>XY gene set</em> (i.e. the number of member genes),
 <p>And we fill these numbers into the 2x2 contingency table:</p>
 <center>
 <table class="table">
-<thead><tr class="header">
+<thead><tr>
 <th></th>
 <th>In the gene set</th>
 <th>Not in the gene set</th>
 <th>Total</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><strong>DE</strong></td>
 <td>13</td>
 <td>41</td>
 <td>54</td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>Not DE</strong></td>
 <td>1121</td>
 <td>20023</td>
 <td>21144</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><strong>Total</strong></td>
 <td>1134</td>
 <td>20064</td>
@@ -5474,26 +5474,26 @@ the Fisher’s exact test. E.g. let’s put whether genes are in the gene
 sets on rows, and put whether genes are DE on columns.</p>
 <center>
 <table class="table">
-<thead><tr class="header">
+<thead><tr>
 <th></th>
 <th>DE</th>
 <th>Not DE</th>
 <th>Total</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><strong>In the gene set</strong></td>
 <td>13</td>
 <td>1121</td>
 <td>1134</td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>Not in the gene set</strong></td>
 <td>41</td>
 <td>20023</td>
 <td>20064</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><strong>Total</strong></td>
 <td>54</td>
 <td>21144</td>
@@ -5909,62 +5909,62 @@ release, there are the following organism packages:</p>
 <col width="36%">
 <col width="10%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Package</th>
 <th>Organism</th>
 <th>Package</th>
 <th>Organism</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>org.Hs.eg.db</td>
 <td>Human</td>
 <td>org.Mm.eg.db</td>
 <td>Mouse</td>
 </tr>
-<tr class="even">
+<tr>
 <td>org.Rn.eg.db</td>
 <td>Rat</td>
 <td>org.Dm.eg.db</td>
 <td>Fly</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>org.At.tair.db</td>
 <td>Arabidopsis</td>
 <td>org.Dr.eg.db</td>
 <td>Zebrafish</td>
 </tr>
-<tr class="even">
+<tr>
 <td>org.Sc.sgd.db</td>
 <td>Yeast</td>
 <td>org.Ce.eg.db</td>
 <td>Worm</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>org.Bt.eg.db</td>
 <td>Bovine</td>
 <td>org.Gg.eg.db</td>
 <td>Chicken</td>
 </tr>
-<tr class="even">
+<tr>
 <td>org.Ss.eg.db</td>
 <td>Pig</td>
 <td>org.Mmu.eg.db</td>
 <td>Rhesus</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>org.Cf.eg.db</td>
 <td>Canine</td>
 <td>org.EcK12.eg.db</td>
 <td>E coli strain K12</td>
 </tr>
-<tr class="even">
+<tr>
 <td>org.Xl.eg.db</td>
 <td>Xenopus</td>
 <td>org.Pt.eg.db</td>
 <td>Chimp</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>org.Ag.eg.db</td>
 <td>Anopheles</td>
 <td>org.EcSakai.eg.db</td>
@@ -6987,26 +6987,26 @@ non-DE genes or non-gene-set genes.</p>
 <col width="38%">
 <col width="13%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th></th>
 <th>In the gene set</th>
 <th>Not in the gene set</th>
 <th>Total</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><strong>DE</strong></td>
 <td><span class="math inline">\(n_{11}\)</span></td>
 <td><span class="math inline">\(n_{12}\)</span></td>
 <td><span class="math inline">\(n_{1+}\)</span></td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>Not DE</strong></td>
 <td><span class="math inline">\(n_{21}\)</span></td>
 <td><span class="math inline">\(\color{red}{n_{22}}\)</span></td>
 <td><span class="math inline">\(\color{red}{n_{2+}}\)</span></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><strong>Total</strong></td>
 <td><span class="math inline">\(n_{+1}\)</span></td>
 <td><span class="math inline">\(\color{red}{n_{+2}}\)</span></td>
@@ -7624,8 +7624,8 @@ quantified.</li>
   "url": "https://carpentries-incubator.github.io/bioc-rnaseq/aio.html",
   "identifier": "https://carpentries-incubator.github.io/bioc-rnaseq/aio.html",
   "dateCreated": "2020-09-15",
-  "dateModified": "2026-04-28",
-  "datePublished": "2026-04-28"
+  "dateModified": "2026-05-05",
+  "datePublished": "2026-05-05"
 }
 
   </script><script>
